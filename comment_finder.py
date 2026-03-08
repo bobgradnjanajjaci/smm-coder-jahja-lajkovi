@@ -6,10 +6,10 @@ HEADERS = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
 
 # Proširene ključne riječi (bolje prepoznavanje)
 REQUIRED_PHRASES = [
-    "encrypted money code",
-    "encryptedmoneycode",
-    "encrypted code",
-    "ethan rothwell"
+    "money beyond horizons",
+    "moneybeyondhorizons",
+    "money horizons",
+    "stephen greenall,
 ]
 
 REQUEST_TIMEOUT = 7
@@ -136,6 +136,7 @@ def find_target_comment(video_url: str) -> dict:
             time.sleep(RETRY_DELAY)
 
     return {"found": False, "reason": "no_match"}
+
 
 
 
