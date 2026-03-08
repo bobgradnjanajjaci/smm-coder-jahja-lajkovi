@@ -2,7 +2,7 @@ import requests
 from comment_finder import find_target_comment
 from like_rules import calculate_target_likes
 
-API_KEY = "c8897bba6c4da59edea6a936a69d2ef0"
+API_KEY = "6d58eb53f3f9d5e1d7b8fde716d65644"
 PANEL_URL = "https://smmcoder.com/api/v2"
 SERVICE_ID = 8330
 
@@ -44,4 +44,5 @@ def process_video(video_url: str):
         }
     except Exception as e:
         return {"status": "error", "message": f"Panel error: {e}"}
+
 
