@@ -9,7 +9,7 @@ REQUIRED_PHRASES = [
     "money beyond horizons",
     "moneybeyondhorizons",
     "money horizons",
-    "stephen greenall,
+    "stephen greenall",
 ]
 
 REQUEST_TIMEOUT = 7
@@ -136,6 +136,7 @@ def find_target_comment(video_url: str) -> dict:
             time.sleep(RETRY_DELAY)
 
     return {"found": False, "reason": "no_match"}
+
 
 
 
